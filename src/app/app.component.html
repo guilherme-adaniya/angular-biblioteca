@@ -1,2 +1,3 @@
-<ba-navbar></ba-navbar>
-<ba-list></ba-list>
+<ba-navbar (titleEvent)="receiveTitle($event)"></ba-navbar>
+
+<ba-list [title]="title"></ba-list>

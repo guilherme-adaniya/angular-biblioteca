@@ -1,3 +1,19 @@
-<p>
-  list works!
-</p>
+<div *ngIf="title == 'Home'">
+  <ba-home></ba-home>
+</div>
+
+<div *ngIf="title == 'Livros'">
+  <ba-livro *ngFor="let livro of livros" [livros]="livro"></ba-livro>
+</div>
+
+<div *ngIf="title == 'Autores'">
+  <ba-autor *ngFor="let autor of autors" [autors]="autor"></ba-autor>
+</div>
+
+<div *ngIf="title == 'Emprestimos'">
+  <ba-emprestimo *ngFor="let emprestimo of emprestimos" [emprestimos]="emprestimo"></ba-emprestimo>
+</div>
+
+<div *ngIf="title == 'Usuarios'">
+  <ba-usuario *ngFor="let usuario of usuarios" [usuarios]="usuario"></ba-usuario>
+</div>

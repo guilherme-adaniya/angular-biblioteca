@@ -1,23 +1,26 @@
-<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" (click)="changeTitle('Home')" >
-    <i class="fas fa-book"></i>
+<div class="img-thumbnail">
+
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" (click)="changeTitle('Home')" >
+      <i class="fa fa-book"></i>
     Biblioteca
   </a>
   <a class="navbar-brand" (click)="changeTitle('Livros')">
-    <i class="fas fa-book"></i>
+    <i class="fa fa-book"></i>
     Livros
   </a>
   <a class="navbar-brand" (click)="changeTitle('Autores')">
-    <i class="fas fa-book"></i>
+    <i class="fa fa-book"></i>
     Autores
   </a>
   <a class="navbar-brand" (click)="changeTitle('Emprestimos')">
-    <i class="fas fa-book"></i>
+    <i class="fa fa-book"></i>
     Emprestimos
   </a>
   <a class="navbar-brand" (click)="changeTitle('Usuarios')">
-    <i class="fas fa-book"></i>
+    <i class="fa fa-book"></i>
     Usuarios
   </a>
 </nav>
-<h1>{{ title }}</h1>
+<ba-title [title]="title"></ba-title>
+</div>

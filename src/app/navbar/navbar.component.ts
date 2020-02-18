@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'ba-navbar',
@@ -9,6 +9,8 @@ export class NavbarComponent implements OnInit {
 
   title: string = 'Home';
 
+  @Output() titleEvent = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit() {
@@ -16,6 +18,7 @@ export class NavbarComponent implements OnInit {
 
   changeTitle(title: string) {
     this.title = title;
+    this.titleEvent.emit(this.title);
   }
 
 }
