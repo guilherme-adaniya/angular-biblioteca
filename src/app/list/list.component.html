@@ -1,19 +1,29 @@
-<div *ngIf="title == 'Home'">
-  <ba-home></ba-home>
+<div *ngIf="title == 'Home'" class="main">
+    <div>
+        <ba-home></ba-home>
+    </div>
 </div>
 
-<div *ngIf="title == 'Livros'">
-  <ba-livro *ngFor="let livro of livros" [livros]="livro"></ba-livro>
+<div *ngIf="title == 'Livros'" class="container main">
+    <div class="row">
+        <ba-livro class="col col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let livro of livros" [livros]="livro"></ba-livro>
+    </div>
 </div>
 
-<div *ngIf="title == 'Autores'">
-  <ba-autor *ngFor="let autor of autors" [autors]="autor"></ba-autor>
+<div *ngIf="title == 'Autores'" class="container main">
+    <div class="row">
+        <ba-autor class="col col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let autor of autors" [autors]="autor"></ba-autor>
+    </div>
 </div>
 
-<div *ngIf="title == 'Emprestimos'">
-  <ba-emprestimo *ngFor="let emprestimo of emprestimos" [emprestimos]="emprestimo"></ba-emprestimo>
+<div *ngIf="title == 'Emprestimos'" class="container main">
+    <div class="row">
+        <ba-emprestimo class="col col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let emprestimo of emprestimos" [emprestimos]="emprestimo"></ba-emprestimo>
+    </div>
 </div>
 
-<div *ngIf="title == 'Usuarios'">
-  <ba-usuario *ngFor="let usuario of usuarios" [usuarios]="usuario"></ba-usuario>
+<div *ngIf="title == 'Usuarios'" class="container main">
+    <div class="row">
+        <ba-usuario class="col col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let usuario of usuarios" [usuarios]="usuario"></ba-usuario>
+    </div>
 </div>

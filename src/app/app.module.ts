@@ -12,6 +12,7 @@ import { EmprestimoComponent } from './emprestimo/emprestimo.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { LivroModule } from './livro/livro.module';
 import { TitleComponent } from './title/title.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TitleComponent } from './title/title.component';
     AutorComponent,
     EmprestimoComponent,
     UsuarioComponent,
-    TitleComponent
+    TitleComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

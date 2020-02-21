@@ -1,14 +1,25 @@
 div {
-  background-image: url("../../assets/images/books.jpg");
-  background-position: center;
-  background-size: cover;
-  text-align: center;
+    background-image: url("../../assets/images/books.jpg");
+    text-align: center;
+    padding-bottom: .25rem;
+    font-family: 'Fjalla One', sans-serif;
+    word-break: break-word;
+    height: auto;
+}
+
+.div-navbar {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navbar {
-  opacity: 0.75;
+    background: rgba(1, 0, 25, 0.75);
 }
 
 .navbar a {
-	margin: 0 4rem;
+    margin: 0 4rem;
+    cursor: pointer;
+    /* color: #F95700; */
+    color: #f24000;
 }

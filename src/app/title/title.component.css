@@ -1,4 +1,17 @@
 h1 {
-  color: white;
-  background-color: none;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    margin-top: 1rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.tableParallax {
+    display: table;
+    height: calc(100% - 56px);
+}
+
+.h1Parallax {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5rem 0;
 }

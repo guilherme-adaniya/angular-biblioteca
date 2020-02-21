@@ -1,0 +1,22 @@
+div {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.middle-parallax {
+  height: 350px;
+  width: 100%;
+  background-image: url('../../assets/images/books-no-cover.jpg');
+  display: table;
+  text-align: center;
+}
+
+.middle-parallax h1 {
+  display: table-cell;
+  vertical-align: middle;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.home-text {
+  padding: 5rem;
+}

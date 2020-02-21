@@ -1,26 +1,25 @@
-<div class="img-thumbnail">
-
-  <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" (click)="changeTitle('Home')" >
+<div class="div-navbar" [ngClass]="{'parallax': title=='Home'}">
+  <nav class="navbar navbar-light">
+    <a class="navbar-brand" (click)="changeTitle('Home')">
       <i class="fa fa-book"></i>
-    Biblioteca
-  </a>
-  <a class="navbar-brand" (click)="changeTitle('Livros')">
-    <i class="fa fa-book"></i>
-    Livros
-  </a>
-  <a class="navbar-brand" (click)="changeTitle('Autores')">
-    <i class="fa fa-book"></i>
-    Autores
-  </a>
-  <a class="navbar-brand" (click)="changeTitle('Emprestimos')">
-    <i class="fa fa-book"></i>
-    Emprestimos
-  </a>
-  <a class="navbar-brand" (click)="changeTitle('Usuarios')">
-    <i class="fa fa-book"></i>
-    Usuarios
-  </a>
-</nav>
-<ba-title [title]="title"></ba-title>
+      Biblioteca
+    </a>
+    <a class="navbar-brand" (click)="changeTitle('Livros')">
+      <i class="fa fa-book"></i>
+      Livros
+    </a>
+    <a class="navbar-brand" (click)="changeTitle('Autores')">
+      <i class="fa fa-book"></i>
+      Autores
+    </a>
+    <a class="navbar-brand" (click)="changeTitle('Emprestimos')">
+      <i class="fa fa-book"></i>
+      Emprestimos
+    </a>
+    <a class="navbar-brand" (click)="changeTitle('Usuarios')">
+      <i class="fa fa-book"></i>
+      Usuarios
+    </a>
+  </nav>
+  <ba-title [title]="title"></ba-title>
 </div>
