@@ -1,15 +1,15 @@
-<div *ngIf="title == 'Home'" class="main">
+<!-- <div *ngIf="title == 'Home'" class="main">
     <div>
         <ba-home></ba-home>
     </div>
-</div>
+</div> -->
 
-<div *ngIf="title == 'Livros'" class="container main">
+<div class="container main">
     <div class="row">
         <ba-livro class="col col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let livro of livros" [livros]="livro"></ba-livro>
     </div>
 </div>
-
+<!-- 
 <div *ngIf="title == 'Autores'" class="container main">
     <div class="row">
         <ba-autor class="col col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let autor of autors" [autors]="autor"></ba-autor>
@@ -26,4 +26,4 @@
     <div class="row">
         <ba-usuario class="col col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let usuario of usuarios" [usuarios]="usuario"></ba-usuario>
     </div>
-</div>
+</div> -->

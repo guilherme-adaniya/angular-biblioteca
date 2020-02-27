@@ -8,8 +8,6 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TitleComponent implements OnInit {
 
   @Input() title: string;
-  url:string = 'assets/images/books.jpg';
-  description: string = 'Pile of Books';
 
   constructor() { }
 

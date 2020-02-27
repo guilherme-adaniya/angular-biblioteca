@@ -15,11 +15,25 @@ div {
 
 .navbar {
     background: rgba(1, 0, 25, 0.75);
+    padding: 0 !important;
 }
 
 .navbar a {
     margin: 0 4rem;
     cursor: pointer;
-    /* color: #F95700; */
     color: #f24000;
+    display: inline-block;
+}
+
+.navbar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f24000;
+    transition: width .3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
 }

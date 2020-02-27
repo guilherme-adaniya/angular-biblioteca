@@ -1,25 +1,20 @@
 <div class="div-navbar" [ngClass]="{'parallax': title=='Home'}">
-  <nav class="navbar navbar-light">
-    <a class="navbar-brand" (click)="changeTitle('Home')">
-      <i class="fa fa-book"></i>
-      Biblioteca
-    </a>
-    <a class="navbar-brand" (click)="changeTitle('Livros')">
-      <i class="fa fa-book"></i>
-      Livros
-    </a>
-    <a class="navbar-brand" (click)="changeTitle('Autores')">
-      <i class="fa fa-book"></i>
-      Autores
-    </a>
-    <a class="navbar-brand" (click)="changeTitle('Emprestimos')">
-      <i class="fa fa-book"></i>
-      Emprestimos
-    </a>
-    <a class="navbar-brand" (click)="changeTitle('Usuarios')">
-      <i class="fa fa-book"></i>
-      Usuarios
-    </a>
-  </nav>
-  <ba-title [title]="title"></ba-title>
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand link" (click)="changeTitle('Home')" routerLink="/home" routerLinkActive="active">
+            <i class="fa fa-book"></i> Biblioteca
+        </a>
+        <a class="navbar-brand link" (click)="changeTitle('Livros')" routerLink="/livros" routerLinkActive="active">
+            <i class="fa fa-book"></i> Livros
+        </a>
+        <a class="navbar-brand link" (click)="changeTitle('Autores')" routerLink="/autores" routerLinkActive="active">
+            <i class="fa fa-book"></i> Autores
+        </a>
+        <a class="navbar-brand link" (click)="changeTitle('Emprestimos')" routerLink="/emprestimos" routerLinkActive="active">
+            <i class="fa fa-book"></i> Emprestimos
+        </a>
+        <a class="navbar-brand link" (click)="changeTitle('Usuarios')" routerLink="/usuarios" routerLinkActive="active">
+            <i class="fa fa-book"></i> Usuarios
+        </a>
+    </nav>
+    <ba-title [title]="title"></ba-title>
 </div>
